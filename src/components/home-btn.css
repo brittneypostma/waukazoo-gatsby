@@ -1,0 +1,32 @@
+.home-btn {
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  text-decoration: none;
+  background-color: #e8e8e8;
+  background-size: 100%, 100%, 100%, 4px 4px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  color: #3a474d;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-shadow: 0px 1px #fff, 0px -1px #262f33;
+  outline: none;
+}
+
+.home-btn span {
+  text-align: center;
+  line-height: 2.4;
+}
+.home-btn:hover {
+  color: #156aba;
+  text-shadow: 0px -1px #07214c;
+  cursor: pointer;
+}
+
+.home-btn:active {
+  transform: scale(0.9);
+}
