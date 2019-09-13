@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 const IndexPage = () => (
   <Layout>
     <div className="home-btns">
-      <Link to="/">
+      <Link to="/check-in">
         <HomeBtn>Check In</HomeBtn>
       </Link>
       <Link to="/">
