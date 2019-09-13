@@ -3,7 +3,7 @@ import React from "react"
 import Lock from "../images/lock.png"
 import Help from "../images/help.png"
 import Wo from "../images/wo.png"
-import "./Footer.css"
+import "./footer.css"
 
 const Footer = () => {
   return (

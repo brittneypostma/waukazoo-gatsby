@@ -19,10 +19,6 @@ const Help = () => {
 
   return (
     <div className="help-page">
-      <Link to="/">
-        <BackBtn>Back</BackBtn>
-      </Link>
-      <br />
       <h1>List of Approved Names</h1>
       <hr />
       <p style={{ color: "red" }}>
@@ -44,6 +40,10 @@ const Help = () => {
           <tbody>{nameComponent}</tbody>
         </table>
       </div>
+      <br />
+      <Link to="/">
+        <BackBtn>Back</BackBtn>
+      </Link>
     </div>
   )
 }
