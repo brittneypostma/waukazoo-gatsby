@@ -6,9 +6,8 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <div className="layout">
+    <div className="layout invisible-scrollbar">
       <Header />
-
       <main>{children}</main>
       <Footer />
     </div>

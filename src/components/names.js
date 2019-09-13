@@ -1,4 +1,4 @@
-export const NAMES = [
+const namesList = [
   {
     lastname: "Adams",
     firstname: "Rachel",
@@ -1448,3 +1448,18 @@ export const NAMES = [
     firstname: "Guest",
   },
 ]
+
+const generateId = () => {
+  return String(Math.floor(Math.random() * 1917 * Date.now()))
+}
+
+const generateNamesWithId = names => {
+  return names.map(name => {
+    return {
+      ...name,
+      id: generateId(),
+    }
+  })
+}
+
+export const NAMES = generateNamesWithId(namesList)

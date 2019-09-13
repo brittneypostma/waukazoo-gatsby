@@ -3,10 +3,14 @@ import "./name-list.css"
 
 const Name = ({ idx, lastname, firstname }) => {
   return (
-    <div className="name">
-      <p>
-        {idx}. {firstname} {lastname}
-      </p>
+    <div>
+      <tbody>
+        <tr className="name-row">
+          <td>&nbsp;&nbsp;&nbsp;{idx}.</td>
+          <td>{firstname}</td>
+          <td>{lastname}</td>
+        </tr>
+      </tbody>
     </div>
   )
 }

@@ -1,4 +1,42 @@
-.name-list {
-  scrollbar-width: auto;
-  margin: 2rem;
+.help-page {
+  margin: 0 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+table {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.table {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 572px;
+  margin: 0 auto;
+  width: 550px;
+}
+
+.table-head {
+  display: grid;
+  grid-template-columns: 75px 150px 327px;
+  background-color: #333;
+  color: white;
+}
+
+.table-head > th {
+  border-left: 1px solid white;
+}
+
+.name-row {
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 75px 150px 325px;
+}
+
+.name-row > td {
+  border-left: 1px solid #333;
+}
+.name-row > td:nth-child(3) {
+  border-right: 1px solid #333;
 }
