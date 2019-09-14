@@ -1,0 +1,26 @@
+.badge {
+  background-color: white;
+  width: 50%;
+  margin: 5% auto;
+  height: 60%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 33fr 66fr;
+  justify-items: space-between;
+  align-items: center;
+}
+
+.logo-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin-top: -20px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.date {
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  margin-top: -8%;
+}

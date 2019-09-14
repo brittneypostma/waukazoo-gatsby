@@ -12,14 +12,14 @@ table {
 .table {
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 572px;
+  max-height: 573px;
   margin: 0 auto;
   width: 550px;
 }
 
 .table-head {
   display: grid;
-  grid-template-columns: 75px 150px 327px;
+  grid-template-columns: 75px 150px 325px;
   background-color: #333;
   color: white;
 }
