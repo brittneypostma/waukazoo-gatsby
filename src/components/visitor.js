@@ -1,26 +1,46 @@
 import React from "react"
-import Logo from "../images/logo.png"
 
 import "./visitor.css"
 
-const date = new Date()
-const dateStr = date.toDateString()
-const time = date.toLocaleTimeString([], {
-  hour: "2-digit",
-  minute: "2-digit",
-})
-
 const Visitor = () => {
   return (
-    <div className="badge">
-      <div className="logo-div">
-        <img src={Logo} alt="Waukazoo Logo" />
-        <p class="date">
-          <span id="date">{dateStr}</span>
-          <br />
-          <span id="time">{time}</span>
-        </p>
-      </div>
+    <div>
+      <h3 className="visitor-badge">VISITOR</h3>
+      <form className="form" name="submit-to-google-sheet" id="test-form">
+        <select required name="Name" id="volunteersList">
+          <option className="option-name" selected>
+            Search for Your Name
+          </option>
+        </select>
+        <div id="guestInput"></div>
+
+        <br />
+
+        <input
+          required
+          type="text"
+          list="select"
+          name="Location"
+          id="class"
+          placeholder="Choose Location or Teacher's Name"
+        />
+        <datalist class="location" id="select" name="Location">
+          <option>-Choose Location or type in Teacher's Name-</option>
+          <option value="Lunch Room"></option>
+          <option value="Gymnasium"></option>
+          <option value="Office"></option>
+          <option value="Playground"></option>
+        </datalist>
+
+        <br />
+
+        <textarea
+          id="notes"
+          name="Notes"
+          placeholder="Reason for Visiting"
+          rows="4"
+        ></textarea>
+      </form>
     </div>
   )
 }

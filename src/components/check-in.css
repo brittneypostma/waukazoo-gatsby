@@ -1,0 +1,35 @@
+.check-in-page {
+  margin-top: 5%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 350px 100px;
+  height: 100%;
+  width: 100%;
+}
+
+.visitor-div {
+  background-color: white;
+  width: 50%;
+  height: 350px;
+  margin: 5% auto;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 33fr 66fr;
+  justify-items: space-between;
+  align-items: center;
+}
+
+.form-badge {
+  align-self: center;
+  justify-self: center;
+  margin-top: 10%;
+  width: 75%;
+}
+
+.form-btns {
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  width: 50%;
+}
