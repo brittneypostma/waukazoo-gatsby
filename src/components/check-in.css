@@ -15,7 +15,7 @@
   margin: 5% auto;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 33fr 66fr;
+  grid-template-columns: 40fr 60fr;
   justify-items: space-between;
   align-items: center;
 }
@@ -23,8 +23,8 @@
 .form-badge {
   align-self: center;
   justify-self: center;
-  margin-top: 10%;
   width: 75%;
+  margin-left: -20px;
 }
 
 .form-btns {
@@ -32,4 +32,15 @@
   justify-self: center;
   justify-content: space-between;
   width: 50%;
+}
+
+@media only screen and (max-width: 1114px) {
+  .visitor-div {
+    grid-template-columns: 1fr;
+  }
+
+  .form-badge {
+    margin-left: 0;
+    margin-top: -50px;
+  }
 }

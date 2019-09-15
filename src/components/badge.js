@@ -14,8 +14,8 @@ const Badge = () => {
   return (
     <div className="badge">
       <div className="logo-div">
-        <img src={Logo} alt="Waukazoo Logo" />
-        <p class="date">
+        <img src={Logo} alt="Waukazoo Logo" className="logo-badge" />
+        <p className="date">
           <span id="date">{dateStr}</span>
           <br />
           <span id="time">{time}</span>

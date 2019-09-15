@@ -8,7 +8,9 @@ import Layout from "../components/layout/layout"
 
 import "../components/check-in.css"
 
-const SecondPage = () => (
+// const handleSubmit = e => {}
+
+const CheckIn = () => (
   <Layout>
     <div className="check-in-page">
       <div className="visitor-div">
@@ -27,4 +29,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default CheckIn

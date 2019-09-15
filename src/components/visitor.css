@@ -8,8 +8,6 @@
 
 .form {
   display: grid;
-  padding: 0;
-  align-items: space-around;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,7 +15,6 @@
   width: 100%;
   position: relative;
   padding: 5px 0;
-  top: -20px;
   background: none;
   border: 1px solid #aaa;
   color: #777;
@@ -30,7 +27,8 @@
   position: relative;
   width: 100%;
   height: 30px;
-  display: none;
+  visibility: hidden;
+  margin-top: 10px;
   padding: 5px 0;
   background: none;
   border: 1px solid #aaa;
@@ -45,7 +43,6 @@
   background-clip: padding-box;
   border: 1px solid #aaa;
   font-size: 14px;
-  margin-top: -5%;
   height: 30px;
 }
 
@@ -54,15 +51,30 @@ datalist {
   clip: rect(0, 0, 0, 0);
 }
 
-textarea {
+#notes {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   height: 60px;
+  width: 100%;
   background-image: linear-gradient(#eee 20%, #fff 80%);
   background-clip: padding-box;
   color: #111;
 }
 
-#notes {
-  height: 60px;
+label {
+  margin-bottom: -15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+label:nth-child(1) {
+  margin-top: -20px;
+}
+
+.teacher {
+  margin-top: -25px;
+}
+
+.notes {
+  margin-top: 5px;
 }
